@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+content{
+  height: 87vh;
+  width:40%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 12;
+  border-radius: 25px;
+  margin: auto;
+  position:relative;
+  right:78px;
+  border-radius: 0px 25px 25px 0px;
+
+}
+
+headers{
+  height: 87vh;
+  width:40%;
+  background-image: url(../img/photo.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 12;
+  border-radius: 25px 0px 0px 25px;
+  margin: auto;
+  position:relative;
+  left:78px;
+}
+  .topic{
+  margin-top: 50px;
+  position: relative;
+  font-size: 30px;
+  font-weight: 1000;
+  color: black;
+  left: 137px;
+  margin-bottom: 30px;
+
+}
+ .txtBox{
+  height: 38px;
+  width: 100;
+  margin:30px 0;
+  position: relative;
+  left: 60px;
+}
+.inputlname{
+ height: 38px;
+ width: 100%;
+ position:relative;
+ margin-left: 280px;
+ bottom: 396px;
+}
+.txtBox input{
+  position: relative;
+  width: 420px;
+  height: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 16px;
+  background: #white;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  border-color: white;
+}
+ .inputlname input{
+  position: relative;
+  height: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 16px;
+  background: #white;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  border-color: white;
+}
+ .txtBox input:focus,
+ .txtBox input:valid{
+  border-color: black;
+  background-color: #fff;
+}
+.inputlname input:focus,
+.inputlname input:valid{
+ border-color: black;
+ background-color: #fff;
+}
+.txtBox label{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: black;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+ .inputlname label{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: black;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.txtBox input:focus ~ label,
+.txtBox input:valid ~ label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: #black;
+
+}
+.inputlname input:focus ~ label,
+.inputlname input:valid ~ label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: #black;
+
+}
+ .btn-google  input{
+  position: relative;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 13px;
+  background: white;
+  border: 2px solid transparent;
+  left: 60px;
+  margin-right: 15px;
+}
+.btn-twt  input{
+ position: relative;
+ height: 30px;
+ border-radius: 5px;
+ font-size: 13px;
+ background: white;
+ border: 2px solid transparent;
+ left: 60px;
+ margin-right: 15px;
+
+}
+.btn-fb  input{
+ position: relative;
+ height: 30px;
+ border-radius: 5px;
+ font-size: 13px;
+ background: white;
+ border: 2px solid transparent;
+ left: 60px;
+
+}
+
+.btn-google, .btn-twt, .btn-fb {
+display:inline-block;
+margin-bottom: 20px;
+}
+.txtmember {
+  position: relative;
+  font-size: 13px;
+  color: black;
+  left: 60px;
+}
+.txtmember{
+  position: relative;
+  left: 60px;
+  margin-bottom: 15px;
+}
+.radioBtn{
+  position: relative;
+  left: 60px;
+  margin-bottom: 15px;
+}
+.radioBtn label{
+  position: relative;
+  font-size: 13px;
+
+}
+.btnSubmit{
+  position: relative;
+  left: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnSubmit input{
+  position: relative;
+  height: 39px;
+  width: 35%;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  background: #DFD0B1;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  color: black;
+  box-shadow: 1px 1px 85px 10px  #DFD0B1;
+
+}
+
+@media (max-width:410px) {
+  header{
+    height: 100vh;
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+.wrapper{
+  position: relative;
+  padding-left: 140px;
+}
+
+.wrapper .button{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  top: 90px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 20px;
+
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+  font-size: 15px;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+  font-size: 15px;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+  font-size: 15px;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+  font-size: 15px;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
+  font-size: 15px;
+}
