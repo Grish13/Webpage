@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.left {
+  background-size: 100% 102%;
+    background-image: url(../img/raze.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.left img {
+    width: 50;
+    max-width: 50%;
+}
+.login-container {
+    max-width: 450px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.informationAccnt {
+    text-align: center;
+    font-size: 1.1em;
+    color: #696969;
+    margin-top: 25px;
+}
+.informationSeason {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 50px;
+    color: #696969;
+}
+.informationRiot{
+  text-align: center;
+  margin-top: 30px;
+  color: #696969;
+
+}
+.information {
+    margin-bottom: 50px;
+    color: #696969;
+}
+span.name{
+  color:#ff4657;
+  text-decoration: underline;
+ }
+
+.registerForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.txtBox {
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+}
+.txtBox input{
+  width: 100%;
+  padding: 14px 64px;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 16px;
+  background: #efefef;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  border-color: white;
+}
+
+.txtBox input:focus,
+.txtBox input:valid{
+ border-color: black;
+ background-color: #fff;
+}
+.txtBox label{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #696969;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.txtBox input:focus ~ label,
+.txtBox input:valid ~ label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: black;
+
+}
+button.submit {
+  border-radius: 6px;
+  font-size: 20px;
+  outline: none;
+  background: #ff4657;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  color: white;
+  box-shadow: 10px 12px 15px -7px rgba(255,70,87,0.75);
+  -webkit-box-shadow: 10px 12px 15px -7px rgba(255,70,87,0.75);
+  -moz-box-shadow: 10px 12px 15px -7px rgba(255,70,87,0.75);
+  padding: 14px 64px;
+}
+.login-container img{
+  width:30%;
+  height:30%;
+}
+
+
+@media (max-width: 780px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .side {
+        display: none;
+    }
+}
